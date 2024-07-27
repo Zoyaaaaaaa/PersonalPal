@@ -37,19 +37,22 @@ const PrivatePage: FC = async () => {
   const { data, error } = await supabase.auth.getUser();
   if (error || !data?.user) {
     redirect('/login');
-    return null; // Return null to avoid rendering anything if redirected
+    return null; 
   }
 
   return (
+    <>
     <div style={styles.container}>
       <div style={styles.greeting}>
         <p>
           Hello <span style={styles.highlight}>{data.user.email}</span>
         </p>
       </div>
-        <Home userId={data.user.id} />
+      <Home userId={data.user.id} />
    
     </div>
+ 
+     </>
   );
 };
 

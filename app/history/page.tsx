@@ -70,15 +70,18 @@ import { FC, useEffect, useState } from "react";
 import { supabase } from "@/utils/supabase/supaBaseclient";
 import Markdown from "../component/markdown";
 
+// Define Message interface
 interface Message {
   role: "user" | "assistant";
   content: string;
 }
 
+// Define ChatHistoryProps interface
 interface ChatHistoryProps {
   userId: string;
 }
 
+// ChatHistory component definition
 const ChatHistory: FC<ChatHistoryProps> = ({ userId }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [error, setError] = useState<string | null>(null); // To handle errors
