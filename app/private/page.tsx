@@ -8,7 +8,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column' as 'column',
     alignItems: 'center' as 'center',
-    justifyContent: 'flex-start' as 'flex-start',
+    // justifyContent: 'flex-start' as 'flex-start',
     minHeight: '100vh',
     backgroundColor: 'black',
     fontFamily: 'Arial, sans-serif',

@@ -69,18 +69,17 @@
 import { FC, useEffect, useState } from "react";
 import { supabase } from "@/utils/supabase/supaBaseclient";
 import Markdown from "../component/markdown";
+import { checkFields } from '../../utils/checkFields'
+import { Diff, FirstArg } from '../../types/utils';
 
 // Define Message interface
 interface Message {
   role: "user" | "assistant";
   content: string;
 }
-
-// Define ChatHistoryProps interface
 interface ChatHistoryProps {
   userId: string;
 }
-
 // ChatHistory component definition
 const ChatHistory: FC<ChatHistoryProps> = ({ userId }) => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -126,6 +125,8 @@ const ChatHistory: FC<ChatHistoryProps> = ({ userId }) => {
       </div>
     );
   };
+
+
 
   return (
     <div className="flex flex-col space-y-4 p-4 max-w-3xl mx-auto bg-gray-50 rounded-lg shadow-lg h-[80vh] overflow-auto">
