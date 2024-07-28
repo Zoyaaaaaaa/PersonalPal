@@ -5,7 +5,7 @@ import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateText } from "ai";
 import { Loader2, Send } from "lucide-react";
 import Markdown from "../component/markdown";
-import ChatHistory from "../history/page"; 
+import ChatHistory from "../history/history"; 
 import {
   Sheet,
   SheetContent,
