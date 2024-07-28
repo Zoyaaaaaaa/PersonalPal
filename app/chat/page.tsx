@@ -204,9 +204,9 @@ const Home: FC<HomeProps> = ({ userId }) => {
           <Button onClick={handleLogout}>Logout</Button>
           <Sheet>
             <SheetTrigger>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+              <p className="bg-blue-500 text-white px-4 py-2 rounded-lg">
                 Open Chat History
-              </button>
+              </p>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
