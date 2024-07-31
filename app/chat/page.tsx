@@ -41,7 +41,7 @@ const Home: FC<HomeProps> = ({ userId }) => {
   const handleLogout = async () => {
     try {
       await logout(); 
-      // router.push('/');
+      router.push('/');
     } catch (error) {
       console.error('Logout failed:', error);
     }

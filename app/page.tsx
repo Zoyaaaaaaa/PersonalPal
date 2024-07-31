@@ -13,7 +13,7 @@ export default function Home() {
         PersonalPal is your ultimate platform for engaging and seamless conversations. Whether you’re connecting with friends, collaborating with colleagues, or seeking instant support, our chat system offers an intuitive and dynamic experience. Powered by Gemini, it ensures accurate and helpful responses to all your queries.
         </p>
         
-        <Link href="/login">
+        <Link href="/private">
           <p className="inline-block px-6 py-3 text-lg font-semibold text-black bg-gray-800 rounded-lg shadow-lg animate-bounce hover:bg-blue-600 hover:text-white transition duration-900 transform hover:scale-105 cursor-pointer">
             Let's Chat
           </p>
